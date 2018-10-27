@@ -17,7 +17,7 @@ Using ESP8266 to call RESTful API from http://TheRide.org to get real-time BUS d
 * NeoPixel Ring (16 LEDs)
 
 ### Software
-* Developer API from http://www.theride.org
+* Developer API key from [TheRide.org](http://www.theride.org/AboutUs/For-Developers/Developer-Files)
 * PlatformIO
 * MQTT Server
 * Home Assistant
