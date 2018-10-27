@@ -1,0 +1,23 @@
+- platform: mqtt
+  name: 'Bus1'
+  state_topic: 'home/TheRideNeoPixel/data'
+  unit_of_measurement: 'rt'
+  value_template: '{{ value_json.data[0].route }}'
+
+- platform: mqtt
+  name: 'Bus2'
+  state_topic: 'home/TheRideNeoPixel/data'
+  unit_of_measurement: 'rt'
+  value_template: '{{ value_json.data[1].route }}'
+
+- platform: mqtt
+  name: 'Bus1 Pred'
+  state_topic: 'home/TheRideNeoPixel/data'
+  unit_of_measurement: 'min'
+  value_template: '{{ value_json.data[0].prediction }}'
+
+- platform: mqtt
+  name: 'Bus2 Pred'
+  state_topic: 'home/TheRideNeoPixel/data'
+  unit_of_measurement: 'min'
+  value_template: '{{ value_json.data[1].prediction }}'
